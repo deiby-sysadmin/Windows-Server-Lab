@@ -27,3 +27,26 @@ El laboratorio utiliza una red interna en VirtualBox para permitir la comunicaci
 ### Objetivo de esta configuración
 
 La red interna garantiza que todas las máquinas puedan comunicarse entre sí sin interferencias externas, mientras que el adaptador NAT del servidor permite realizar actualizaciones, descargas y configuraciones que requieren acceso a Internet.
+
+## Máquinas virtuales del laboratorio
+
+El entorno está compuesto por tres máquinas virtuales principales, cada una cumpliendo un rol específico dentro del dominio.
+
+### Windows Server 2022 (Controlador de dominio)
+- Rol principal: Controlador de dominio (AD DS).
+- Servicios instalados: Active Directory, DNS, DHCP, políticas de grupo.
+- Adaptadores de red: Red interna + NAT.
+- Función: Gestionar el dominio, usuarios, grupos, políticas y servicios centrales.
+
+### Cliente Windows 1
+- Sistema operativo: Windows10.
+- Rol: Equipo unido al dominio para pruebas de GPOs, inicio de sesión y recursos compartidos.
+- Adaptador de red: Red interna.
+
+### Cliente Windows 2
+- Sistema operativo: Windows10.
+- Rol: Segundo equipo unido al dominio para validar configuraciones y políticas en múltiples clientes.
+- Adaptador de red: Red interna.
+
+### Objetivo de esta configuración
+Permitir la simulación de un entorno empresarial básico con un controlador de dominio y varios equipos cliente para aplicar políticas, probar servicios y validar configuraciones reales.
