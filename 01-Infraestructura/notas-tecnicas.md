@@ -96,3 +96,11 @@ Para que el entorno funcione correctamente, se necesitan los siguientes recursos
 ### Objetivo de estos requisitos
 Garantizar que el laboratorio funcione de manera estable y permita realizar todas las prácticas de administración de sistemas sin limitaciones técnicas.
 
+## Estado de la infraestructura
+
+La infraestructura del laboratorio queda correctamente definida y preparada para continuar con la configuración del entorno.  
+A partir de este punto se procederá a documentar cada uno de los servicios y componentes del dominio, comenzando por la instalación y configuración de Active Directory.
+
+Esta sección sirve como base para entender la estructura del laboratorio y facilitar la referencia durante el resto de la documentación.
+
+
