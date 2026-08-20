@@ -50,3 +50,26 @@ El entorno está compuesto por tres máquinas virtuales principales, cada una cu
 
 ### Objetivo de esta configuración
 Permitir la simulación de un entorno empresarial básico con un controlador de dominio y varios equipos cliente para aplicar políticas, probar servicios y validar configuraciones reales.
+
+## Topología general del laboratorio
+
+La topología del laboratorio está diseñada para simular un entorno empresarial básico donde un controlador de dominio gestiona varios equipos cliente dentro de una misma red interna.
+
+### Estructura de la topología
+
+- **Controlador de dominio (Windows Server 2022)**  
+  Gestiona el dominio, usuarios, grupos, políticas y servicios esenciales como DNS y DHCP.
+
+- **Clientes Windows**  
+  Dos equipos unidos al dominio para validar configuraciones, políticas y servicios.
+
+- **Red interna**  
+  Permite la comunicación directa entre el servidor y los clientes sin depender de la red física del host.
+
+- **Acceso a Internet (solo servidor)**  
+  El servidor utiliza un adaptador NAT para actualizaciones y descargas necesarias.
+
+### Objetivo de esta topología
+
+Recrear un entorno controlado donde se puedan aplicar políticas de grupo, probar servicios, realizar automatizaciones y validar configuraciones de manera segura y aislada.
+
