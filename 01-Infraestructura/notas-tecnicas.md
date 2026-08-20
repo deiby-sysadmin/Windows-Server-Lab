@@ -73,3 +73,26 @@ La topología del laboratorio está diseñada para simular un entorno empresaria
 
 Recrear un entorno controlado donde se puedan aplicar políticas de grupo, probar servicios, realizar automatizaciones y validar configuraciones de manera segura y aislada.
 
+## Requisitos del laboratorio
+
+Para que el entorno funcione correctamente, se necesitan los siguientes recursos mínimos:
+
+### Hardware del equipo anfitrión
+- Procesador con soporte para virtualización (Intel VT‑x o AMD‑V).
+- 8 GB de RAM como mínimo (recomendado 16 GB para mayor fluidez).
+- 60 GB de espacio libre en disco.
+- Sistema operativo anfitrión compatible con VirtualBox.
+
+### Recursos asignados a las máquinas virtuales
+- **Windows Server 2022:** 2–4 GB de RAM, 2 núcleos de CPU, 40 GB de disco.
+- **Clientes Windows:** 2 GB de RAM cada uno, 1 núcleo de CPU, 20 GB de disco.
+
+### Software necesario
+- VirtualBox o cualquier otro hipervisor compatible.
+- ISO de Windows Server 2022.
+- ISO de Windows para los clientes.
+- Extensiones de VirtualBox 
+
+### Objetivo de estos requisitos
+Garantizar que el laboratorio funcione de manera estable y permita realizar todas las prácticas de administración de sistemas sin limitaciones técnicas.
+
