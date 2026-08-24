@@ -32,7 +32,7 @@ dominio, los contenedores principales (Computers, Users, System,
 LostAndFound), la lista de Domain Controllers y los servidores que
 ejercen cada rol FSMO.
 
-![Información general del dominio en PowerShell](./Imágenes/05-powershell-info-dominio1.png)
+![Información general del dominio en PowerShell](./Imagenes/05-powershell-info-dominio1.png)
 
 Entre los datos más relevantes que se pueden leer en la captura
 están:
@@ -58,7 +58,7 @@ La segunda parte de la salida amplía la información con el listado de
 controladores de dominio y el estado detallado del servicio NTDS
 (Active Directory Domain Services).
 
-![Estado del servicio AD DS en PowerShell](./Imágenes/05-powershell-info-dominio2.png)
+![Estado del servicio AD DS en PowerShell](./Imagenes/05-powershell-info-dominio2.png)
 
 La sección "Controladores de dominio" muestra que AD01.contoso.com
 tiene la IP 10.0.3.15, pertenece al sitio Default-First-Site-Name y
@@ -91,7 +91,7 @@ el directorio `C:\Backups\Daily`, copia los archivos deseados dentro
 y muestra por pantalla un mensaje confirmando que la operación ha
 finalizado correctamente.
 
-![Ejecución del script backup.ps1](./Imágenes/05-backup-ejecucion.png)
+![Ejecución del script backup.ps1](./Imagenes/05-backup-ejecucion.png)
 
 En la captura se ve la primera ejecución del script. La salida
 muestra el listado del directorio `C:\Backups\Daily` antes de
@@ -112,7 +112,7 @@ Para que el script no tenga que lanzarse a mano, se creó una tarea
 programada en el Programador de tareas de Windows llamada
 "Backup Diario".
 
-![Tarea programada Backup Diario](./Imágenes/05-backup-tarea-programada.png)
+![Tarea programada Backup Diario](./Imagenes/05-backup-tarea-programada.png)
 
 La tarea se configuró con los siguientes parámetros:
 
@@ -153,4 +153,5 @@ requieren instalar nada adicional en el servidor. En una evolución
 natural de este apartado se podrían añadir scripts complementarios
 para la creación masiva de usuarios, el monitoreo del estado de los
 servicios críticos o el envío automático de informes por correo.
+
 
